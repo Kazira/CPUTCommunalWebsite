@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;   
+    background-color: #1c3745;
+}
+
+a {
+    color: #4fa6d5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #45beff;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-primary {
+    font-family: "Roboto", sans-serif;
+  }
+
+/* ---------------- Global Classes ---------------*/
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* ------x------- Global Classes -------x-------*/
+/* --------------- navbar ----------------- */
+
+.nav{
+    background:#1c3745;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    color: white;
+    
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    margin-right: 193px;
+    
+}
+.nav-items a
+{
+    color: white;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+img {
+    background-color:#1c3745;
+    max-width: 150%;
+    max-height: 150%;
+    }
+    .nav .nav-brand a
+    {
+        font-size: 18px;
+        margin: 0;
+        padding: 4px 0;
+        line-height: 1;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: white;
+    }
+.nav .nav-brand{
+    height: 200px;
+    width: 200px;
+    
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    display: block;
+    font-family: var(--Lexend);
+    
+}
+
+.nav .social{
+    padding: 1.4rem 0
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+
+/*parte da panel principal onde se encontra tudo*/
+.pnlprincipal {
+
+    background: url('../img/cputback.jpg');
+    
+    background-size: cover;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pnlotherslogin {
+   
+     
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.kazira {
+    width: 40%;
+    height: 30%;
+    
+}
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 80;
+   
+    
+    
+}
+
+.second-column{
+    content: "";
+    position: absolute;
+    background-color: #1c3745; opacity:0.9;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 22%;
+    left: 0;
+    /*ate aqui*/
+}
+.second-column h2
+{
+    margin-top: 2%;
+    color: white;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary {
+    color: rgb(255, 255, 255);
+    
+}
+.title-second {
+    color: #0d5668;
+}
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: #fff;
+}
+.description-second {
+    color: #0e0f0f;
+}
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+/*bottons*/
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #414242;
+}
+
+form a.password
+{
+
+    margin-top: 2px;
+
+}
+
+form input.btn_submit {
+    background-color: #000000;
+    border: 1px solid #0d5668;
+    border-radius: 15px;
+    transition: background-color .5s;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    width: 150px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self:center;
+    border: none;
+    right: 20px;
+    margin-left: 40px;
+    margin-top: -43x;
+    
+  
+  
+}
+form input.btn_submit:hover {
+    background-color: rgb(49, 46, 46);
+    border: 1px solid #000000;
+    color: #ffffff;
+   
+}
+
+
+.first-content {
+    display: flex;
+   
+    
+}
+.first-content .second-column {
+    z-index: 11;
+    
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+   
+}
+.form {
+    margin-bottom: 5%;
+    background-color: rgb(29, 29, 29);opacity:0.9;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.form input {
+    border: 0 none;
+    outline: 0;
+    margin-right: 12%;
+    height: 45px;
+    width: 250%;
+    background-color: #ecf0f1;
+}
+.second-column form
+{
+    margin-top: 3%;
+}
+.second-column a
+{
+    margin-top: -3%;
+    color: white;
+}
+.second-column a :hover
+{
+    color: rgb(29, 29, 29);
+}
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify {
+    color: #000000;
+    padding: 0 20px;
+}
+
+/* second content*/
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+
+.kbaixo {
+
+    width: 10%;
+    height: 0%;
+    margin: 10px 0;
+}
+
+/* ---------background:#a1c4fd  ;-------- Footer --------------------- */
+
+.footer{
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 4vh;
+
+    position: relative;
+    color: #ffffff;
+    font-size: 10px;
+    
+	background: #1c3745;
+    text-align: center;
+}
+
+/* ---------x------- Footer ----------x---------- */
